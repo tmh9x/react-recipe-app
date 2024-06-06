@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4" aria-label="Footer">
+    <footer className="bg-gray-200 text-black dark:bg-gray-800 dark:text-white p-4" aria-label="Footer">
       <div className="flex flex-col md:flex-row md:justify-between">
         <div>
           <h2 className="text-lg font-bold mb-2">Contact Us</h2>
@@ -22,7 +22,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="text-white hover:text-blue-500" />
+              <FaFacebook className="text-black dark:text-white hover:text-blue-500" />
             </a>
             {/* LinkedIn-Link */}
             <a
@@ -30,7 +30,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="text-white hover:text-blue-500" />
+              <FaLinkedin className="text-black dark:text-white hover:text-blue-500" />
             </a>
           </div>
         </div>

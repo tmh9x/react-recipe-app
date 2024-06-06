@@ -7,15 +7,12 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
   return (
     <header className="bg-gray-200 dark:bg-gray-800 p-4 flex justify-between items-center">
-      <h1 className="text-xl font-bold dark:text-white">React Grundlagen 6</h1>
-      <button
-        onClick={toggleTheme}
-        className="p-2 rounded-full bg-gray-300 dark:bg-gray-700"
-      >
+      <h1 className="text-xl font-bold dark:text-white">Recipes</h1>
+      <button onClick={toggleTheme} className="p-2 rounded-full bg-gray-300 dark:bg-gray-700">
         {theme === "light" ? (
-          <MoonIcon className="h-6 w-6 text-black" />
+          <MoonIcon className="h-6 w-6 text-black" data-testid="moon-icon" />
         ) : (
-          <SunIcon className="h-6 w-6 text-white" />
+          <SunIcon className="h-6 w-6 text-white" data-testid="sun-icon" />
         )}
       </button>
     </header>

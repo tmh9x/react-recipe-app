@@ -16,20 +16,10 @@ const Footer = () => {
         <div className="mt-4 md:mt-0">
           <h2 className="text-lg font-bold mb-2">Follow Us</h2>
           <div className="flex space-x-4">
-            {/* Facebook-Link */}
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" data-testid="fb-link">
               <FaFacebook className="text-black dark:text-white hover:text-blue-500" />
             </a>
-            {/* LinkedIn-Link */}
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="li-link">
               <FaLinkedin className="text-black dark:text-white hover:text-blue-500" />
             </a>
           </div>
